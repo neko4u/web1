@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chat-container {
+    max-width: 70vh;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-box {
+    height: 80vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.message {
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.user-message {
+    background-color: #ecf9e1;
+    align-self: flex-end; 
+}
+
+.bot-message {
+    background-color: #8ca5ff;
+    align-self: flex-start; 
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.input-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #579ce7;
+    color: white;
+    cursor: pointer;
+}
+
+.message {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.imgUpload {
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imgUpload form{
+    text-align: center;
+}
+
+.imgUpload input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #579ce7;
+    color: white;
+    cursor: pointer;
+}

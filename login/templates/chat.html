@@ -1,0 +1,28 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot</title>
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box">
+        </div>
+        <div class="input-container">
+            <div class="imgUpload">
+            <form id="uploadForm" enctype="multipart/form-data" method="post">
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </form>
+        </div>
+            <button onclick="sendMessage()" id="send-button">发送</button>
+        </div>
+        
+    </div>
+
+    <script src="{% static 'js/chat.js' %}"></script>
+</body>
+</html>

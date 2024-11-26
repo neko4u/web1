@@ -1,0 +1,33 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label>用户名</label>
+                <input type="text" name="user">
+            </div>
+            <div>
+                <label>密码</label>
+                <input type="password" name="pwd">
+            </div>
+            <span>{{error}}</span>
+            <div>
+                <button type="submit">登录</button>
+            </div>
+            <div>
+                <a href={% url "register" %}>点击注册!</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
